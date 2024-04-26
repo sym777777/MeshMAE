@@ -13,6 +13,17 @@ pip install -r requirements.txt
 
 
 To install PyGem, please refer to [Pygem](https://github.com/mathLab/PyGeM).
+ Pygem不能直接pip装  pip装的版本太老
+ 这里参考：https://blog.csdn.net/python1639er/article/details/123172311
+ 
+ 
+ 关于chamfer这个包，下载代码有自带的.cpp,需要手动安装
+ 先控制台 cd chamfer_dist
+ 然后dir
+ 再 Python setup.py build
+ 没问题的话 再执行
+ python setupo.py install
+ 再次运行代码发现这个包不再报错
 
 
 ## Fetch Data
@@ -112,5 +123,6 @@ For example, the root of pre-trained model should be:
   year={2022},
 }
 ```
-
+### 补充
+如需对预训练进行test，在msehmae.py倒数几行，需要更改return值
 
