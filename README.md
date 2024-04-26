@@ -22,7 +22,7 @@ To install PyGem, please refer to [Pygem](https://github.com/mathLab/PyGeM).
  然后dir
  再 Python setup.py build
  没问题的话 再执行
- python setupo.py install
+ python setup.py install
  再次运行代码发现这个包不再报错
 
 
