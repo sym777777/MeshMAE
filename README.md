@@ -124,5 +124,5 @@ For example, the root of pre-trained model should be:
 }
 ```
 ### 补充
-如需对预训练进行test，在msehmae.py倒数几行，需要更改return值
+如需对预训练进行test，在meshmae.py倒数几行，需要更改return值
 
