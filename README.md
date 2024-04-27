@@ -18,12 +18,12 @@ To install PyGem, please refer to [Pygem](https://github.com/mathLab/PyGeM).
  
  
  关于chamfer这个包，下载代码有自带的.cpp,需要手动安装:
- *先控制台 cd chamfer_dist
- *然后dir
- *再 Python setup.py build
- *没问题的话 再执行
- *python setup.py install
- *再次运行代码发现这个包不再报错
+ 先控制台 cd chamfer_dist    
+ 然后dir    
+ 再 Python setup.py build    
+ 没问题的话 再执行   
+ python setup.py install   
+ 再次运行代码发现这个包不再报错
 
 
 ## Fetch Data
