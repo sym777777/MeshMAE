@@ -52,6 +52,7 @@ To process the raw data, please use data_preprocess/manifold.py, which can trans
 To remesh the meshes, you can refer to the datagen_maps.py of [SubdivNet](https://github.com/lzhengning/SubdivNet), which can generate hierarchical structures.
 ### Datasets updata by sym
 更改后的dataset.py读取数据的存放路径格式为:
+
 | datasets_name     
 
                       | train：{1.obj；2.obj……}
