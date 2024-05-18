@@ -344,15 +344,11 @@ class ClassificationDataset(data.Dataset):
             self.augments = augment
 
     def browse_dataroot(self):
-        self.shape_classes = [x.name for x in self.dataroot.iterdir() if x.is_dir()]
-
-        for obj_class in self.dataroot.iterdir():
-            if obj_class.is_dir():
-                label = self.shape_classes.index(obj_class.name)
-                for obj_path in (obj_class / self.mode).iterdir():
-                    if obj_path.is_file():
-                        self.mesh_paths.append(obj_path)
-                        self.labels.append(label)
+        data_path = self.dataroot / self.mode
+        for obj_path in data_path.iterdir():
+            if obj_path.suffix == '.obj':
+                print(f"Found obj file: {obj_path}")  # 添加这一行
+                self.mesh_paths.append(obj_path)
 
         self.mesh_paths = np.array(self.mesh_paths)
         self.labels = np.array(self.labels)
@@ -399,14 +395,11 @@ class SegmentationDataset(data.Dataset):
     # self.set_attrs(total_len=len(self.mesh_paths))
 
     def browse_dataroot(self):
-        for dataset in (Path(self.dataroot) / self.mode).iterdir():
-            if dataset.is_dir():
-                for obj_path in dataset.iterdir():
-                    if obj_path.suffix == '.obj':
-                        obj_name = obj_path.stem
-                        seg_path = obj_path.parent / (obj_name + '.json')
-
-                        self.mesh_paths.append(str(obj_path))
+        data_path = self.dataroot / self.mode
+        for obj_path in data_path.iterdir():
+            if obj_path.suffix == '.obj':
+                print(f"Found obj file: {obj_path}")  # 添加这一行
+                self.mesh_paths.append(obj_path)
 
         self.mesh_paths = np.array(self.mesh_paths)
 
