@@ -53,6 +53,7 @@ To remesh the meshes, you can refer to the datagen_maps.py of [SubdivNet](https:
 ### Datasets updata by sym
 更改后的dataset.py读取数据的存放路径格式为:
 
+```
 | datasets_name     
 
    ├── train/
@@ -66,7 +67,8 @@ To remesh the meshes, you can refer to the datagen_maps.py of [SubdivNet](https:
     │   airplane_0001.obj
     
     │   ├──  airplane_0002.obj
-                      
+ ```
+                  
 便于直接处理训练与测试数据分开存放的数据
 
 
