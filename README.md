@@ -55,9 +55,17 @@ To remesh the meshes, you can refer to the datagen_maps.py of [SubdivNet](https:
 
 | datasets_name     
 
-                      | train：{1.obj；2.obj……}
-
-                      | test：{1.obj；2.obj……}
+   ├── train/
+   
+    │   ├── airplane_0001.obj
+    
+    │   ├──  airplane_0002.obj
+    
+    ├── test/
+    
+    │   airplane_0001.obj
+    
+    │   ├──  airplane_0002.obj
                       
 便于直接处理训练与测试数据分开存放的数据
 
