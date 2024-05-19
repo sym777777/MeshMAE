@@ -64,7 +64,7 @@ To remesh the meshes, you can refer to the datagen_maps.py of [SubdivNet](https:
     
     ├── test/
     
-    │   airplane_0001.obj
+    │   ├──  airplane_0001.obj
     
     │   ├──  airplane_0002.obj
  ```
